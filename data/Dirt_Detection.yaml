@@ -1,0 +1,5 @@
+train: ../datasets/Dirt_Detection/train/images
+val: ../datasets/Dirt_Detection/valid/images
+
+nc: 10
+names: ['business_cards', 'dirt', 'keys', 'other', 'paper_and_notebooks', 'pens', 'rulers', 'scissors', 'tapes', 'usb_sticks']
