@@ -1,0 +1,177 @@
+2022-04-28 22:27:44,781 INFO    MainThread:42721 [wandb_setup.py:_flush():75] Loading settings from /home/zhenhaoxu/.config/wandb/settings
+2022-04-28 22:27:44,781 INFO    MainThread:42721 [wandb_setup.py:_flush():75] Loading settings from /home/zhenhaoxu/yolo/yolov5/wandb/settings
+2022-04-28 22:27:44,781 INFO    MainThread:42721 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-04-28 22:27:44,781 INFO    MainThread:42721 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program': 'train.py'}
+2022-04-28 22:27:44,781 INFO    MainThread:42721 [wandb_setup.py:_flush():75] Applying login settings: {'login_timeout': 30}
+2022-04-28 22:27:44,781 INFO    MainThread:42721 [wandb_init.py:_log_setup():437] Logging user logs to /home/zhenhaoxu/yolo/yolov5/wandb/run-20220428_222744-iqc9flwo/logs/debug.log
+2022-04-28 22:27:44,781 INFO    MainThread:42721 [wandb_init.py:_log_setup():438] Logging internal logs to /home/zhenhaoxu/yolo/yolov5/wandb/run-20220428_222744-iqc9flwo/logs/debug-internal.log
+2022-04-28 22:27:44,781 INFO    MainThread:42721 [wandb_init.py:init():471] calling init triggers
+2022-04-28 22:27:44,782 INFO    MainThread:42721 [wandb_init.py:init():475] wandb.init called with sweep_config: {}
+config: {'weights': 'weights/yolov5s.pt', 'cfg': '', 'data': 'data/Chess.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.01, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0, 'copy_paste': 0.0}, 'epochs': 20, 'batch_size': 16, 'imgsz': 640, 'rect': False, 'resume': False, 'nosave': False, 'noval': False, 'noautoanchor': False, 'noplots': False, 'evolve': None, 'bucket': '', 'cache': 'ram', 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'optimizer': 'SGD', 'sync_bn': False, 'workers': 8, 'project': 'runs/train', 'name': 'exp', 'exist_ok': False, 'quad': False, 'cos_lr': False, 'label_smoothing': 0.0, 'patience': 100, 'freeze': [0], 'save_period': -1, 'local_rank': -1, 'entity': None, 'upload_dataset': False, 'bbox_interval': -1, 'artifact_alias': 'latest', 'save_dir': 'runs/train/exp5'}
+2022-04-28 22:27:44,782 INFO    MainThread:42721 [wandb_init.py:init():524] starting backend
+2022-04-28 22:27:44,782 INFO    MainThread:42721 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-04-28 22:27:44,789 INFO    MainThread:42721 [backend.py:ensure_launched():217] starting backend process...
+2022-04-28 22:27:44,796 INFO    MainThread:42721 [backend.py:ensure_launched():222] started backend process with pid: 42763
+2022-04-28 22:27:44,797 INFO    MainThread:42721 [wandb_init.py:init():533] backend started and connected
+2022-04-28 22:27:44,802 INFO    MainThread:42721 [wandb_init.py:init():597] updated telemetry
+2022-04-28 22:27:44,819 INFO    MainThread:42721 [wandb_init.py:init():628] communicating run to backend with 30 second timeout
+2022-04-28 22:27:45,902 INFO    MainThread:42721 [wandb_run.py:_on_init():1923] communicating current version
+2022-04-28 22:27:46,028 INFO    MainThread:42721 [wandb_run.py:_on_init():1927] got version response 
+2022-04-28 22:27:46,029 INFO    MainThread:42721 [wandb_init.py:init():659] starting run threads in backend
+2022-04-28 22:27:49,296 INFO    MainThread:42721 [wandb_run.py:_console_start():1897] atexit reg
+2022-04-28 22:27:49,296 INFO    MainThread:42721 [wandb_run.py:_redirect():1770] redirect: SettingsConsole.REDIRECT
+2022-04-28 22:27:49,297 INFO    MainThread:42721 [wandb_run.py:_redirect():1775] Redirecting console.
+2022-04-28 22:27:49,299 INFO    MainThread:42721 [wandb_run.py:_redirect():1831] Redirects installed.
+2022-04-28 22:27:49,299 INFO    MainThread:42721 [wandb_init.py:init():684] run started, returning control to user process
+2022-04-28 22:27:49,304 INFO    MainThread:42721 [wandb_run.py:_config_callback():1131] config_cb None None {'data_dict': {'train': '/home/zhenhaoxu/yolo/yolov5/../datasets/Chess_test1/train/images', 'val': '/home/zhenhaoxu/yolo/yolov5/../datasets/Chess_test1/valid/images', 'nc': 12, 'names': ['black-bishop', 'black-king', 'black-knight', 'black-pawn', 'black-queen', 'black-rook', 'white-bishop', 'white-king', 'white-knight', 'white-pawn', 'white-queen', 'white-rook']}}
+2022-04-28 22:28:54,700 INFO    MainThread:42721 [wandb_run.py:_finish():1685] finishing run dirt_detection/YOLOv5/iqc9flwo
+2022-04-28 22:28:54,700 INFO    MainThread:42721 [wandb_run.py:_atexit_cleanup():1866] got exitcode: 0
+2022-04-28 22:28:54,701 INFO    MainThread:42721 [wandb_run.py:_restore():1838] restore
+2022-04-28 22:29:00,942 INFO    MainThread:42721 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 52
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 22523252
+  total_bytes: 23631823
+}
+
+2022-04-28 22:29:01,203 INFO    MainThread:42721 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 1
+  media_count: 53
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 22695284
+  total_bytes: 23753872
+}
+
+2022-04-28 22:29:02,052 INFO    MainThread:42721 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 53
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 23753872
+  total_bytes: 23787436
+}
+
+2022-04-28 22:29:02,156 INFO    MainThread:42721 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 53
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 23753872
+  total_bytes: 23787436
+}
+
+2022-04-28 22:29:02,260 INFO    MainThread:42721 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 53
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 23753872
+  total_bytes: 23787436
+}
+
+2022-04-28 22:29:02,364 INFO    MainThread:42721 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 53
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 23775039
+  total_bytes: 23787436
+}
+
+2022-04-28 22:29:02,467 INFO    MainThread:42721 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 53
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 23775039
+  total_bytes: 23787436
+}
+
+2022-04-28 22:29:02,571 INFO    MainThread:42721 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 53
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 23787436
+  total_bytes: 23787436
+}
+
+2022-04-28 22:29:02,673 INFO    MainThread:42721 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 53
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 23787436
+  total_bytes: 23787436
+}
+
+2022-04-28 22:29:02,777 INFO    MainThread:42721 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 53
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 23787436
+  total_bytes: 23787436
+}
+
+2022-04-28 22:29:02,880 INFO    MainThread:42721 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 53
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 23787436
+  total_bytes: 23787436
+}
+
+2022-04-28 22:29:02,984 INFO    MainThread:42721 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 53
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 23787436
+  total_bytes: 23787436
+}
+
+2022-04-28 22:29:03,779 INFO    MainThread:42721 [wandb_run.py:_on_finish():1995] got exit ret: file_counts {
+  wandb_count: 6
+  media_count: 53
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 23787436
+  total_bytes: 23787436
+}
+
+2022-04-28 22:29:04,055 INFO    MainThread:42721 [wandb_run.py:_on_finish():1995] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+  media_count: 53
+  artifact_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 23787436
+  total_bytes: 23787436
+}
+local_info {
+}
+
+2022-04-28 22:29:05,174 INFO    MainThread:42721 [wandb_run.py:_footer_history_summary_info():3102] rendering history
+2022-04-28 22:29:05,175 INFO    MainThread:42721 [wandb_run.py:_footer_history_summary_info():3134] rendering summary
+2022-04-28 22:29:05,176 INFO    MainThread:42721 [wandb_run.py:_footer_sync_info():3057] logging synced files

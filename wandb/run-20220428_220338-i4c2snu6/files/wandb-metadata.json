@@ -1,0 +1,34 @@
+{
+    "os": "Linux-5.15.0-27-generic-x86_64-with-debian-bookworm-sid",
+    "python": "3.7.6",
+    "heartbeatAt": "2022-04-28T20:03:42.779571",
+    "startedAt": "2022-04-28T20:03:38.684631",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1060",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--batch",
+        "16",
+        "--epochs",
+        "6",
+        "--data",
+        "data/KD.yaml",
+        "--weights",
+        "weights/yolov5s.pt",
+        "--cache"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ultralytics/yolov5.git",
+        "commit": "b53917de8d204be075d82b1392562aacb397fe64"
+    },
+    "email": "tom1049443989@gmail.com",
+    "root": "/home/zhenhaoxu/yolo/yolov5",
+    "host": "zhenhaoxu-virtual-machine",
+    "username": "zhenhaoxu",
+    "executable": "/home/zhenhaoxu/anaconda3/bin/python"
+}
